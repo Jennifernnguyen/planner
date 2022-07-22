@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planner</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="/bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+    
+    
+    
+
+</head>
+<body>
+<div class="tabs">
+    <button class="button" onclick="openTab('Plan')">PLAN</button>
+    <button class="button" onclick="openTab('Goals')">GOALS</button>
+    <button class="button" onclick="openTab('Calendar')">CALENDAR</button>
+  </div>
+
+
+  <div id="Plan" class="tab title">
+    <h1></h1>
+    <div class="row">
+        <div class="column">
+            <h2>TO DO</h2>
+            <form>
+                <input type="text" class="todo-input"placeholder="what needs to be done ??">
+                  <button class="todo-button" type="submit">
+                      <i class="fas fa-plus-square"></i>
+                  </button>
+               </form>
+             
+          
+              <div class="todo-container">
+                  <ul class="todo-list"></ul>
+              </div>
+
+            </div>
+
+            <div class="column">
+                
+                <div class="wrapper">
+                    <div class="schedule">
+                      <input placeholder="" />
+                      <span> 7 AM </span>
+                    </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 8 AM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 9 AM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 10 AM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 11 AM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 12 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 1 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 2 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 3 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 4 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 5 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 6 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 7 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 8 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 9 PM </span>
+                      </div>
+                    <div class="schedule">
+                        <input placeholder="" />
+                        <span> 10 PM </span>
+                      </div>
+                  </div>
+                  
+            </div>
+            <div class="column">
+                <h2> NOTES</h2>
+                <textarea></textarea>
+              <div id="d">
+                <button class="left">
+                    <svg height="100%" width="100%" viewbox="0 0 10 10">
+                        <path d="m 7 1 L 1 5 L 7 9 Z" fill="rgba(255,255,255,0.8)" />
+                    </svg></button>
+                <button class="right">
+                    <svg height="100%" width="100%" viewbox="0 0 10 10">
+                        <path d="m 3 1 L 9 5 L 3 9 Z" fill="rgba(255,255,255,0.8)" />
+                    </svg>
+                </button>
+            </div>
+              </div>
+
+
+
+
+    </div>
+    
+  </div>
+  
+  <div id="Goals" class="tab title" style="display:none">
+    <div class="row">
+        
+        <div class="column">
+            <h3>WEEKLY GOALS</h3>
+            <textarea id="goals"></textarea>
+        </div>
+        <div class="column">
+            <h3>MONTHLY GOALS</h3>
+            <textarea id="goals1"></textarea>
+        </div>
+        <div class="column">
+            <h3>YEARLY GOALS</h3>
+            <textarea id="goals2"></textarea>
+        </div>
+    </div>
+  </div>
+  
+  <div id="Calendar" class="tab title" style="display:none">
+    <div class="calendar disable-selection" id="calendar">
+        <div class="left-side">
+            <div class="current-day text-center">
+                <h1 class="calendar-left-side-day"></h1>
+                <div class="calendar-left-side-day-of-week"></div>
+            </div>
+            <div class="current-day-events">
+                <div>Current Events:</div>
+                <ul class="current-day-events-list"></ul>
+            </div>
+            <div class="add-event-day">
+                <input type="text" class="add-event-day-field" placeholder="Create an Event">
+                <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="text-right calendar-change-year">
+                <div class="calendar-change-year-slider">
+                    <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+                    <span class="calendar-current-year"></span>
+                    <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+                </div>
+            </div>
+            <div class="calendar-month-list">
+                <ul class="calendar-month"></ul>
+            </div>
+            <div class="calendar-week-list">
+                <ul class="calendar-week"></ul>
+            </div>
+            <div class="calendar-day-list">
+                <ul class="calendar-days"></ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+  <script async src="/js/all.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    function openTab(titleName) {
+      var i;
+      var x = document.getElementsByClassName("title");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(titleName).style.display = "block";  
+    }
+    </script>
+  </body>
