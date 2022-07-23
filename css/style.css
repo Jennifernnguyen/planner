@@ -40,23 +40,32 @@ body{
 /******* PLAN HEAD ********/
   
 #Plan h1{
-    font-size: 25px;
-    letter-spacing: 8px;
+    font-size: 27px;
+    letter-spacing: 9px;
     padding: 10px;
     text-align: left;
     line-height: auto;
     font-weight: 500;
     color: #000;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Unna', serif;
     text-transform: uppercase;
   }
   
-  
+/******** PRIORITIES ********/
+#priorities {
+    width: 75%;
+    height: 150px !important;
+    background: #e3d5ce !important;
+    border-radius: 100px 100px 10px 10px;
+   
+    
+  }
 /******** TO DO LIST ********/
 
 h2{
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2px;
+    margin-bottom: 10px;
     text-align: left;
     line-height: auto;
     font-weight: 500;
@@ -228,7 +237,7 @@ textarea {
     width: 100%;
     height: 300px;
     margin-bottom: 50px;
-    padding:25px 25px 40px;
+    padding:25px 50px 40px;
 
   }
   textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
