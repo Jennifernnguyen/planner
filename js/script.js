@@ -220,12 +220,10 @@ function display() {
     min = min < 10 ? min = "0" + min : min;
     sec = sec < 10 ? sec = "0" + sec : sec;
     
-    if (hour > 12) {
-      hour -= 12;
-      noon = "PM";
-    } else {
-      noon = "AM";
-    };
+	var time = new Date();
+	console.log(
+	  time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+	);
     
     hour = hour < 10 ? hour = "0" + hour : hour;
   
