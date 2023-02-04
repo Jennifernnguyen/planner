@@ -17,7 +17,7 @@ const svgCal = (
 	const daysInMonth = new Date(year, month + 1, 0).getDate();
 
 	//capitalized month name
-	const displayMonth = MONTHS[month].charAt(0).toUpperCase() + MONTHS[month].slice(1);
+	const displayMonth = MONTHS[month].toUpperCase();
 	
 	//create array of weekdays in order
 	let datesArray = [];
@@ -55,8 +55,8 @@ const svgCal = (
 		const days = daysByWeek[week];
 		//loop through the days in each week
 		for (let day = 0; day < days.length; day++) {
-			let dayFill = "#f5f0ea";
-			let dayStroke = "#f5f0ea";
+			let dayFill = "#cea2d7";
+			let dayStroke = "#cea2d7";
 			//day box
 			const dayBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
 			dayBox.classList.add("day");
@@ -82,7 +82,7 @@ const svgCal = (
 				width: 20,
 				fill: dayFill,
 				stroke: dayStroke2,
-				"stroke-width": 1
+				"stroke-width": .25
 			};
 			for (let key in dayBoxAttrs) {
 				dayBox.setAttribute(key, dayBoxAttrs[key]);
@@ -103,8 +103,8 @@ const svgCal = (
 				x: (days[day] * 20) + 10,
 				y: ((week + 1) * 20) + 10,
 				"dominant-baseline": "middle",
-				fill: "#000",
-				"font-family": "Urbanist", 
+				fill: "	#674ab3",
+				"font-family": "Ubuntu", 
 				"font-size": 5,
 				"text-anchor": "middle",
 				"pointer-events": "none",
@@ -129,16 +129,19 @@ const svgCal = (
 	monthDisplay.classList.add("month");
 	monthDisplay.classList.add(MONTHS[month]);
 	let monthTextAttrs = {
-		x: "50%",
+		x: "40%",
 		y: 10,
 		"dominant-baseline": "middle",
-		fill: "#000",
-		"font-family": "Kristi", 
-		"font-size": 22,
+		fill: "#674ab3",
+		"font-family": "Ubuntu", 
+		"font-style": "italic",
+		"font-size": 12,
 		"text-anchor": "middle",
 		"pointer-events": "none",
 		"user-select": "none"
+		
 	};
+	
 	for (let key in monthTextAttrs) {
 		monthDisplay.setAttribute(key, monthTextAttrs[key]);
 	}
@@ -149,12 +152,13 @@ const svgCal = (
 	yearDisplay.textContent = year;
 	yearDisplay.classList.add("year");
 	let yearTextAttrs = {
-		x: 128,
+		x:"75%",
 		y: 10,
 		"dominant-baseline": "middle",
-		fill: "#000",
-		"font-family": "Kristi", 
-		"font-size": 10,
+		fill: "#674ab3",
+		"font-family": "Ubuntu", 
+		"font-style": "italic",
+		"font-size": 12,
 		"text-anchor": "middle",
 		"pointer-events": "none",
 		"user-select": "none"
@@ -316,12 +320,5 @@ $("#create").click(function() {
 
 
 
-
-
-
-
-  //FULL CALENDAR
   
-
-
 

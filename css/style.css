@@ -1,7 +1,12 @@
 body{
 	margin:0 auto;
     overflow-x: hidden;
-    background: #fff;
+    background-color: #fff;
+    background-image: url("/images/lf.jpg");
+  
+    
+    
+ 
   
 	
 }
@@ -22,62 +27,80 @@ body{
 
 .tabs .button{
     font-family:'Urbanist', sans-serif;
-    color: #000;
-    font-weight: 400;
+    float: right;
+    color: 	#674ab3;
+    font-weight: 500;
     font-size: 10px;
-    background-color: #f5f0ea;
-    width: 300px;
-    border: 1px;
-    border-radius: 3px;
-    padding: 10px 0;
+    background-color: #cea2d7;
+    width: 100px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    
     
 }
 
+
 .tabs .button:hover {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    font-size:11px;
+    background-color: 	#a348a6;
+    color: #cea2d7;
+    
 }
 /******* PLAN HEAD ********/
   
 #Plan h1{
     font-size: 27px;
-    letter-spacing: 9px;
     padding: 10px;
     text-align: left;
     line-height: auto;
     font-weight: 500;
-    color: #000;
-    font-family: 'Unna', serif;
+    color: #cea2d7;
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
+    font-style: italic;
+  
+    
   }
+
+
+
   
 /******** PRIORITIES ********/
 #priorities {
-    width: 75%;
-    height: 150px !important;
-    background: #e3d5ce !important;
+    width: 100%;
+    height: 175px !important;
+    background: #cea2d7!important;
     border-radius: 100px 100px 10px 10px;
+    margin-bottom: 20px;
    
     
   }
 /******** TO DO LIST ********/
 
 h2{
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    letter-spacing: 1px;;
     margin-bottom: 10px;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
     line-height: auto;
     font-weight: 500;
-    color: #000;
-    font-family: 'Urbanist', sans-serif;
+    color: 	#cea2d7;
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
 }
 form {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 20px;
+    
     
 }
 
@@ -87,7 +110,7 @@ form button {
     padding: 4px;
     font-size: 12px;
     border:2px;
-    background: #f5f0ea;
+    background: #a348a6;
     border-radius: 1px ;
     
     
@@ -97,33 +120,34 @@ form input{
     padding: 4px; 
     margin: 4px;
     width: 100%;
+    
 }
 
 form button {
-    color: #d7bdb0 ;
-    background:#f5f0ea ;
+    color: #a348a6;
+    background:	#cea2d7;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover{
-    background :#d7bdb0 ;
+    background :#a348a6 ;
     color: white;
 }
 
 input::placeholder{
-    color:#e0dbd7 !important;
+    color:	#cea2d7 !important;
     padding: 7px; 
     margin: 7px;
     border: 2px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .todo-container{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .todo-list{
@@ -134,8 +158,8 @@ input::placeholder{
 
 .todo{
     margin-block-end: 0.5rem;
-    background: #f5f0ea;
-    color: black;
+    background: #a348a6;
+    color: #000;
     font-size: 11px;
     display: flex;
     justify-content: space-between;
@@ -152,8 +176,8 @@ input::placeholder{
 }
 
 .trash-btn, .complete-btn{
-    background: #f5f0ea;
-    color: #d7bdb0;
+    background: #cea2d7;
+    color: #a348a6;
     border: none;
     padding: 5px;
     cursor: pointer;
@@ -188,9 +212,12 @@ input::placeholder{
     display: flex;
     height: 3rem;
     border: 0;
-    background: #fff;
-    font-family: 'Urbanist', sans-serif;
-    border-top: 1px #e1dad2 solid;
+    background: #9f63c4;
+    font-family: 'Ubuntu', sans-serif;
+    border-top: 3px #674ab3 solid;
+    border-radius:12px;
+    margin: 1px 0;
+    
   }
   .schedule span {
     position: absolute;
@@ -202,7 +229,7 @@ input::placeholder{
     width: 6rem;
     font-size: 10px;
     border-radius: inherit;
-    color: #000;
+    color: #674ab3;
     pointer-events: none;
     transition: all 0.35s;
     letter-spacing: 1px;
@@ -219,17 +246,192 @@ input::placeholder{
     transition: all 0.35s;
   }
  .schedule input::placeholder {
-    color: #9b9ba5;
+    color: #fff;
   }
+
+
+/****** PLAYER *********/
+
+.music-player{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    color: #cea2d7;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+   
+    
+}
+
+.music-name,
+.artist-name{
+    text-align: center;
+}
+
+.music-name{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.artist-name{
+    font-size: 18px;
+}
+.disk{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: url('/images/lf.jpg');
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+.disk.play{
+    animation-play-state: running;
+}
+.disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #cea2d7;
+}
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #cea2d7;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px #a348a6;
+}
+
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.play-btn{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #a348a6;
+    cursor: pointer;
+    border: none;
+}
+
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: #cea2d7;
+    transition: .5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    background: #a348a6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 /******* NOTES *********/
 textarea {
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 12px;
     line-height: 1.5;
     border:0;
     border-radius:1px;
-    background:#d7bdb0 ;
+    background:	#674ab3 ;
     opacity: 75%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     overflow:hidden;
@@ -238,6 +440,7 @@ textarea {
     height: 300px;
     margin-bottom: 50px;
     padding:25px 50px 40px;
+    border-radius: 10px;
 
   }
   textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
@@ -251,10 +454,12 @@ textarea {
 	height:250px;
 	width:250px;
 	border-radius:2px;
-	background:#f5f0ea;
+	background:	#cea2d7;
 	padding: 20px;
-    font-family: 'Urbanist', sans-serif;
+    font-family:  'Ubuntu', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 10px;
+  
 }
 .left, .right {
 	background:none;
@@ -266,60 +471,76 @@ textarea {
 	font-size:10px;
 	line-height:10px;
 	cursor:pointer;
+  
+   
 	
 }
 .right{
-	top:5%;
+	top:10%;
 	left:10%;
+    
 	
 }
 .left{
-	top:5%;
+	top:10%;
 	left:3%;
+   
 	
 }
 .right:hover, .left:hover{
 	opacity:0.7;
 }
 .day:hover{
-	stroke:#d7bdb0;
-    fill:#d7bdb0;
-}
-.saturday, .sunday{
-	fill:rgba(255,255,255,0.1);
+	fill:	#9075d8;
+    stroke:	#cea2d7;
 }
 
+
 .today{
-	fill:#fff;
-    stroke:#fff;
+	fill:	#9075d8;
+    stroke:	#cea2d7;
+    color:#9075d8;
 }
 
 /********** GOALS ***********/
 #goals {
     width: 100%;
     height: 600px !important;
+    background: #a348a6;
+
+
     
   }
 #goals1 {
-    background:#d8c6bd ;
+    background:#9f63c4;
     width: 100%;
     height: 600px !important;
+    
+
   }
 #goals2 {
-    background:#e3d5ce ;
+    background:	#cea2d7;
     width: 100%;
     height: 600px !important;
+    
+
   }
   
   h3{
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
     line-height: auto;
     font-weight: 500;
-    color: #000;
-    font-family: 'Urbanist', sans-serif;
+    color: 	#cea2d7;
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
+    font-style: italic;
+    
+
+}
+.margin {
+    margin-top: 45px;
 }
 
 /******** FULL CALENDAR *********/
@@ -350,22 +571,23 @@ textarea {
     top: 0;
     bottom: 0;
     margin: auto; 
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     
 }
   
 .calendar {
-    background: white;
+    background: #674ab3;
     width: 95%;
     height: 490px;
     border-radius: 1px;
     overflow: hidden;
+    border-radius: 10px;
  }
 .calendar .calendar-left-side-day-of-week, .calendar .current-day-events ul, .calendar .add-event-day, .calendar .calendar-change-year, .calendar .calendar-days li {
       position: relative; 
     }
 .calendar .calendar-left-side-day, .calendar .calendar-left-side-day-of-week, .calendar .current-day-events, .calendar .add-event-day-field-btn, .calendar .add-event-day-field {
-      color: white;
+      color: 	#674ab3;
      }
 .calendar .calendar-left-side-day-of-week, .calendar .calendar-week {
       text-transform: uppercase;
@@ -376,7 +598,7 @@ textarea {
      }
 .calendar .left-side {
       width: 30%;
-      background: #d7bdb0;
+      background:#cea2d7;
       float: left; 
     }
 .calendar .current-day, .calendar .current-day-events {
@@ -412,7 +634,7 @@ textarea {
         outline: none; 
     }
 .calendar .add-event-day .add-event-day-field::placeholder {
-        color: #ccc;
+        color: #cea2d7;
      }
 .calendar .add-event-day .add-event-day-field-btn {
         left: inherit;
@@ -427,10 +649,10 @@ textarea {
      }
 .calendar .calendar-change-year .calendar-change-year-slider {
         margin: 15px 0;
-        color: #737373;
+        color: 	#674ab3;
      }
 .calendar .calendar-change-year .calendar-change-year-slider .fa:hover {
-        color: #404040; 
+        color: 	#674ab3; 
     }
 .calendar .calendar-days, .calendar .calendar-week, .calendar .calendar-month {
       list-style: none;
@@ -446,11 +668,11 @@ textarea {
       width: calc(100% / 12);
       height: 30px;
       line-height: 30px;
-      color: #868686;
+      color: 		#9075d8;
       font-size: 13px;
      }
 .calendar .calendar-month li.active {
-        color: #171717;
+        color: #cea2d7;
         font-weight: 600;
      }
 .calendar .calendar-days li {
@@ -464,17 +686,17 @@ textarea {
         width: 40px;
         height: 40px;
         line-height: 40px;
-        color: #959595; 
+        color: #cea2d7; 
     }
 .calendar .calendar-days li.another-month:after {
-        color: #ccc; 
+        color: 	#9075d8; 
     }
 .calendar .calendar-days li:hover:after, .calendar .calendar-days li.selected-day:after, .calendar .calendar-days li.event-day:before, .calendar .calendar-days li.active-day:after {
         border-radius: 50%; 
     }
 .calendar .calendar-days li:hover:after, .calendar .calendar-days li.selected-day:after {
-        background: #ccc;
-        color: white; 
+        background: 	#9075d8;
+        color: 	#cea2d7; 
     }
 .calendar .calendar-days li.event-day:before {
         content: ' ';
@@ -483,17 +705,17 @@ textarea {
         position: absolute;
         top: 7px;
         right: 7px;
-        background: #92846b;
+        background: #9075d8;
      }
 .calendar .calendar-days li.active-day:after {
-        color: white;
-        background: #d7bdb0; 
+        color: 		#674ab3;
+        background: 	#cea2d7; 
     }
 .calendar .calendar-week {
       margin-bottom: 30px;
       font-weight: 600;
-      color: #737373;
-      border-top: 1px solid #ccc;
+      color: #cea2d7;
+      border-top: 1px solid #cea2d7;
      }
 .calendar .calendar-week li {
         width: calc(100% / 7);
@@ -522,6 +744,9 @@ textarea {
         width:100%;
         height: 100%;
         }
+    .calendar {
+        margin-top: 100px;
+    }
     .calendar .calendar-month li{
         font-size: 9px;
     }
